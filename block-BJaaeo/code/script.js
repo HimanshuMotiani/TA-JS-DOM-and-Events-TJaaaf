@@ -3,8 +3,12 @@ let input = document.querySelector("input");
 let equal = document.querySelector(".equal");
 let clear = document.querySelector(".clear");
 console.log(buttons);
+let initialValue =0
 buttons.addEventListener("click",(event)=>{
-    console.log(event.target)
+if(input.value == initialValue){
+    input.value =event.target.innerText
+}
+else
     input.value += event.target.innerText
 });
 equal.addEventListener("click",()=>{
@@ -13,5 +17,5 @@ equal.addEventListener("click",()=>{
 })
 clear.addEventListener("click",()=>{
 
-    input.value= "  ";
+    input.value= initialValue;
 })
