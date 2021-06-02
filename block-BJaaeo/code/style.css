@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+*,*::before,x::after{
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center{
+    text-align: center;
+}
+body{
+background-color: #f2f4f8;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.method{
+    background-color: #cfcfcf;
+    color: white;
+    text-align: center;
+    padding: 1.4rem;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    margin: .4rem 0.1rem;
+
+}
+.flex-24{
+    flex: 0 1 24%;
+}
+.flex-72{
+    flex:0 1 72%;
+}
+.flex-32{
+    flex: 0 1 32%;
+}
+.text{
+    background-color: black;
+    padding: 1.4rem;
+    border-radius: 20px;
+    margin: .4rem 0
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.stretch{
+    align-items: stretch;
+}
+.color{
+    background-color: #711933;
+}
+.equal{
+    background-color: #348081;
+    color:  #1b1b1b;
+    position: absolute;
+    top: 41%;
+    right: 10%;
+    height: 57%;
+    width: 17%;
+}
+.clear{
+    background-color: #3d1b10;
+    position: absolute;
+    bottom: 0%;
+    right: 52%;
+    /* width: 16%; */
+    padding: 1.4rem 2.4rem;
+}
+.numbers{
+    color:  #1b1b1b;
+    font-weight: 500;
+}
+.input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+}
+.relative{
+    position: relative;
+}
+.flex-equal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
