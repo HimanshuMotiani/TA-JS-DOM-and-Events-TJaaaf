@@ -57,7 +57,31 @@ body{
 }
 .hero{
     background-color: white;
-    text-align: center;
+    padding-bottom: 4rem;
     width: 50%;
     margin: 10rem auto;
+}
+h1{
+    font-size: 2.4rem;
+    background-color: #2a8ff7;
+    color: white;
+    padding: 1.6rem;
+    text-align: center;
+}
+p{
+font-size: 1.4rem;
+margin: 1rem 0;
+}
+.client,.cpu{
+    font-size: 1.4rem ;
+    padding-left: 4rem;
+    margin: 2rem 0;
+}
+h4{
+    font-size: 2.8rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+i{
+    margin-right: 1.4rem;
 }
