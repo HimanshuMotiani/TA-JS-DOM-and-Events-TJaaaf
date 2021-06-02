@@ -5,13 +5,13 @@ let userInfo = {};
 form.addEventListener("submit", handle);
 function handle(event) {
     event.preventDefault();
-    userInfo.name= form.elements.text.value
-    userInfo.email= form.elements.email.value
-    userInfo.gender= form.elements.gender.value
-    userInfo.color= form.elements.color.value
-    userInfo.range= form.elements.range.value
-    userInfo.drone= form.elements.drone.value
-    userInfo.terms= form.elements.terms.checked
+    userInfo.name= event.target.elements.text.value
+    userInfo.email= event.target.elements.email.value
+    userInfo.gender= event.target.elements.gender.value
+    userInfo.color= event.target.elements.color.value
+    userInfo.range= event.target.elements.range.value
+    userInfo.drone= event.target.elements.drone.value
+    userInfo.terms= event.target.elements.terms.checked
     console.log(userInfo)
 
     document.querySelector("h1").innerText = `Hello ${userInfo.name}`;
