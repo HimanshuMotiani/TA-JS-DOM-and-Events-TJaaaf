@@ -1,0 +1,30 @@
+.timer{
+    font-size: 3rem ;
+    text-align: center;
+}
+.start{
+    background-color: green;
+    font-size: 1.6rem;
+    border-radius: 10px;
+}
+.stop{
+    background-color: red;
+    font-size: 1.6rem;
+    border-radius: 10px;
+}
+.clear{
+    background-color: yellow;
+    font-size: 1.6rem;
+    border-radius: 10px;
+}
+.currentTime{
+    font-size: 3rem;
+    text-align: center;
+}
+h1{
+    background: linear-gradient(yellow,green);
+}
+.demo{
+        background-color: red;
+        color: red;
+}
