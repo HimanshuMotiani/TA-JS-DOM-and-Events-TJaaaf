@@ -3,7 +3,7 @@ var h1 = document.getElementsByTagName('h1')[0],
     stop = document.querySelector('.stop'),
     clear = document.querySelector('.clear'),
     seconds = 0, minutes = 0, hours = 0,
-    t;
+    time,timeStart;
 
 function add() {
     seconds++;
@@ -16,26 +16,42 @@ function add() {
         }
     }
     
-    h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+    h1.innerText = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" 
+    + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" 
+    + (seconds > 9 ? seconds : "0" + seconds);
 
     timer();
 }
 function timer() {
-    t = setTimeout(add, 1000);
+    time = setTimeout(add, 1000);
 }
 timer();
 
 
 /* Start button */
-start.onclick = timer;
+start.addEventListener("click",timer)
 
 /* Stop button */
-stop.onclick = function() {
-    clearTimeout(t);
-}
+stop.addEventListener("click",()=>{
+    clearTimeout(time);
+})
 
 /* Clear button */
 clear.onclick = function() {
-    h1.textContent = "00:00:00";
+    h1.innerText = "00:00:00";
     seconds = 0; minutes = 0; hours = 0;
 }
+function clockStart() {
+    timeStart = setInterval(()=> {
+               date = new Date()
+               let hour = date.getHours();
+               let minutes = date.getMinutes();
+               let seconds = date.getSeconds();
+               document.getElementById("demo").innerHTML = hour + ":"+ minutes + ":" + seconds;
+  }, 1000);
+}
+function clockStop() {
+    clearInterval(timeStart)
+}
+
+
